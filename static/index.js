@@ -59,11 +59,11 @@ sendButton.addEventListener("click", async () => {
             typingDiv.remove();
 
             if (data.bot_message) {
-                appendMessage("Bot", data.bot_message, true);
+                appendMessage("Bubble", data.bot_message, true);
             }
         } catch (error) {
             typingDiv.remove();
-            appendMessage("Bot", "Oops! I couldn't process your request. Try again later.");
+            appendMessage("Bubble", "Oops! I couldn't process your request. Try again later.");
         }
     }
 });
@@ -74,7 +74,7 @@ userInput.addEventListener("keypress", (e) => {
 
 
 function initializeChat() {
-    appendMessage("Bot", "👋 Hello! Welcome to Gemini Chatbot! How can I assist you today?", true);
+    appendMessage("Bubble", "👋 Hello! Welcome to Bubble Ai Chatbot! How can I assist you today?", true);
 }
 
 
